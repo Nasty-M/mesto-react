@@ -1,14 +1,14 @@
 import PopupWithForm from "./PopupWithForm";
 
-function PopupEditAvatar(props) {
+function PopupEditAvatar({isOpen, onClose, onSubmit}) {
   return(
     <PopupWithForm 
       name='avatar' 
       title='Обновить аватар' 
       buttonName='Сохранить' 
-      isOpen={props.isOpen} 
-      onClose={props.onClose}
-      onSubmit={props.onSubmit}>
+      isOpen={isOpen} 
+      onClose={onClose}
+      onSubmit={onSubmit}>
       <div className="popup__label">
         <input 
           className="popup__input popup__input_type_avatar-link" 

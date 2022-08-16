@@ -1,14 +1,14 @@
 import PopupWithForm from "./PopupWithForm";
 
-function PopupEditProfile(props) {
+function PopupEditProfile({isOpen, onClose, onSubmit}) {
   return(
     <PopupWithForm 
       name='edit' 
       title='Редактировать профиль' 
       buttonName='Сохранить' 
-      isOpen={props.isOpen} 
-      onClose={props.onClose}
-      onSubmit={props.onSubmit}>
+      isOpen={isOpen} 
+      onClose={onClose}
+      onSubmit={onSubmit}>
       <div className="popup__label">
         <input 
           className="popup__input popup__input_type_name" 
