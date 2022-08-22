@@ -47,3 +47,10 @@
 .profile__overlay:hover:after {
   opacity: 1;
 }
+
+@media screen and (max-width: 767px) {
+  .profile__overlay {
+    margin-right: 0;
+    margin-bottom: 26px;
+  }
+}
