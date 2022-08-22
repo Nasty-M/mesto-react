@@ -53,7 +53,8 @@ function PopupEditProfile({isOpen, onClose, onUpdateUser}) {
           maxLength="40" 
           required
           id="input-name" 
-          onChange={handleChangeName}/>
+          onChange={handleChangeName}
+          value={name || ''}/>
         <span className="popup__error-message input-name-error"></span>
       </div>
       <div className="popup__label">
@@ -66,7 +67,8 @@ function PopupEditProfile({isOpen, onClose, onUpdateUser}) {
           maxLength="200" 
           required
           id="input-about" 
-          onChange={handleChangeDescription}/>
+          onChange={handleChangeDescription}
+          value={description || ''}/>
         <span className="popup__error-message input-about-error"></span>
       </div>
     </PopupWithForm>
